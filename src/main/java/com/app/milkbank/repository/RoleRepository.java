@@ -9,6 +9,6 @@ import com.app.milkbank.models.ERole;
 import com.app.milkbank.models.Role;
 
 @Repository
-public interface RoleRepository extends JpaRepository<Role, Long> {
+public interface RoleRepository extends JpaRepository<Role, Integer> {
 	Optional<Role> findByName(ERole name);
 }
